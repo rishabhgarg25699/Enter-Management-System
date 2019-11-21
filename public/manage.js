@@ -17,6 +17,7 @@ $(function() {
         let value = visitor.val();
         console.log(value);
         $.post('/check', { task: value }, function(ret) {
+            console.log(ret);
             if (ret == 1)
                 visitor_output.append("You can go");
             else

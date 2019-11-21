@@ -41,12 +41,14 @@ function copy(fd) {
 function search(fd) {
     return new Promise(function(resolve, reject) {
         connection.query(
-            `select * from employee where id = ${fd}`,
+            `select * from today_employee where id = ${fd}`,
             function(err, rows, cols) {
                 if (err) {
                     console.log(err);
                     reject(err);
                 } else {
+                    console.log("Garg");
+                    console.log(rows);
                     resolve(rows);
                 }
             }
