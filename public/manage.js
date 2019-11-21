@@ -16,11 +16,11 @@ $(function() {
     add_visitor.click(function() {
         let value = visitor.val();
         $.post('/check', { task: value }, function(ret) {
-            console.log(ret.length);
+            // console.log(ret);
             if (ret == 1)
-                visitor_output.append("You can go");
+                visitor_output.text("You can go");
             else
-                visitor_output.append("Employee is absent today. No entry for you");
+                visitor_output.text("Employee is absent today. No entry for you");
         })
     })
 
