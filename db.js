@@ -47,8 +47,6 @@ function search(fd) {
                     console.log(err);
                     reject(err);
                 } else {
-                    console.log("Garg");
-                    console.log(rows);
                     resolve(rows);
                 }
             }
