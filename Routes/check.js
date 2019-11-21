@@ -7,9 +7,11 @@ check.post('/', function(req, res) {
     database.search(req.body.task)
         .then(function() {
             res.redirect('/')
+                // res.send("1");
         })
         .catch(function(err) {
             res.send(err);
+            // res.send("0");
         })
 })
 
