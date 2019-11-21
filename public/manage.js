@@ -4,6 +4,8 @@ $(function() {
     let add = $('#add')
     let visitor = $('#visitor')
     let add_visitor = $('#add_visitor')
+    let visitor_output = $('#visitor_output')
+
     add.click(function() {
         let value = new1.val();
         $.post('/route', { task: value }, function() {
@@ -11,12 +13,14 @@ $(function() {
         })
     })
 
-    // Incomplete fnction
     add_visitor.click(function() {
         let value = visitor.val();
         console.log(value);
-        $.post('/check', { task: value }, function() {
-
+        $.post('/check', { task: value }, function(ret) {
+            if (ret == 1)
+                visitor_output.append("You can go");
+            else
+                visitor_output.append("Employee is absent today. No entry for you");
         })
     })
 
