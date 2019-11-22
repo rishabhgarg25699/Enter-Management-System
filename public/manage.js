@@ -8,8 +8,7 @@ $(function() {
     let employee_output = $('#employee_output')
 
     add.click(function() {
-        // let value = new1.val();
-        add.val('');
+        let value = new1.val();
         $.post('/route', { task: value }, function(temp) {
             if (temp == 1)
                 employee_output.text("Ho gayi attendence");
