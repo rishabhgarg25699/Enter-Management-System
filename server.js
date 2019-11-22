@@ -10,4 +10,4 @@ server.use('/', express.static(__dirname + "/public"))
 server.use('/route', todoRoute)
 server.use('/check', todoCheck)
 
-server.listen(4567);
+server.listen(3333);
