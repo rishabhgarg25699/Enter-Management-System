@@ -14,8 +14,12 @@ route.get('/', function(req, res) {
 
 route.post('/', function(req, res) {
     database.copy(req.body.task)
-        .then(() => res.redirect('/'))
-        .catch((err) => res.send({ error: err }))
+        .then(function() {
+            res.send("1")
+        })
+        .catch(function(err) {
+            res.send("0")
+        })
 })
 
 module.exports = route;
