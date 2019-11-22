@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Entry Management System</title>
     <script src="jquery.js"></script>
     <script src="manage.js"></script>
 </head>
 
-<body>
+<body class="container" style="background-color: thistle;;">
     <h1>
-        <center><u>XYZ COMPANY</u></center>
+        <center><u><strong> XYZ COMPANY </strong>
+            </u>
+        </center>
     </h1>
+    <br>
+    <h2>
+        <center><u>Employees Of Our Company</u></center>
+    </h2>
     <br>
     <center>
         <h3>
@@ -22,21 +32,35 @@
         </h3>
         <br>
     </center>
+    <hr style="border: 4px solid blue; ">
     <div>
         <h2> Employee!!! Come Here</h2>
         <h4>Enter employee ID</h4>
         <input type="text" id="new">
         <br><br>
-        <button id="add"> Submit </style></button>
+        <button class="btn btn-success" id="add"> Submit </style></button>
         <h3 id="employee_output"></h3>
     </div>
-    <div style="text-align: right;">
+    <hr style="border: 4px solid blue; ">
+
+    <div style="text-align: center;">
         <h2> Visitor!!! Come Here</h2>
         <input type="text" id="visitor">
         <br><br>
-        <button id="add_visitor"> Submit </button>
+        <button class="btn btn-success" id="add_visitor"> Submit </button>
         <h3 id="visitor_output"></h3>
     </div>
+    <hr style="border: 4px solid blue; ">
+    <div style="text-align: right;">
+        <h2>Wants to checkout.<br> Enter Your checkout password</h2>
+        <input type="text" id="new">
+        <br><br>
+        <button class="btn btn-success" id="add"> Submit </style></button>
+        <h3 id="employee_output"></h3>
+    </div>
+
+    <!-- <hr style="border: 4px solid blue; "> -->
+
 </body>
 
 </html>
